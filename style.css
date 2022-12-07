@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Fira Code';
-  src: url('./fonts/ttf/FiraCode-Bold.ttf') format('ttf');
+  src: url('./fonts/ttf/FiraCode-Bold.ttf');
   font-weight: 700;
   font-style: normal;
 }
@@ -12,12 +12,17 @@ html, body {
 }
 body {
   background-color: black;
-  
 }
 
 h1 {
   font-family: 'Fira Code';
   color: white;
+  animation: fade-in 1s linear;
+}
+
+ul {
+  animation: fade-in 1.5s linear;
+  animation-delay: 0.75s;
 }
 
 ul {
@@ -29,8 +34,13 @@ ul {
 a {
   color: white;
   text-decoration: none;
-  font-family: monospace;
+  font-family: 'Fira Code';
   font-size: 3vh;
+  box-shadow: inset 0 0 0 0 #ff004d;
+  color: #ff004d;
+  margin: 0 -.25rem;
+  padding: 0 .25rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 
 }
 
@@ -42,30 +52,15 @@ p {
 }
 /* Add a transition to hover effects on buttons */
 
-a:hover{
-  content: "";
-
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background-color: #bb3a3a;
-  animation: fade-in-underline 0.5s linear forwards;
+a:hover {
+  box-shadow: inset 300px 0 0 0 #ff004d;
+  color: white;
 }
 
-@keyframes fade-in-underline {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 100%;
-  }
-}
+
 
 /* Add a subtle animation to the page header when the page loads */
-h1 {
-  animation: fade-in 1.5s linear;
-}
+
 
 @keyframes fade-in {
   from {
