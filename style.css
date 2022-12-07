@@ -17,12 +17,11 @@ body {
 h1 {
   font-family: 'Fira Code';
   color: white;
-  animation: fade-in 1s linear;
+  animation: fade-in 0.5s linear;
 }
 
 ul {
   animation: fade-in 1.5s linear;
-  animation-delay: 0.75s;
 }
 
 ul {
