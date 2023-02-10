@@ -90,7 +90,7 @@ p {
 /* Add a transition to hover effects on buttons */
 
 a:hover {
-  box-shadow: inset 300px 0 0 0 #f98952;
+  box-shadow: inset 500px 0 0 0 #f98952;
   color: white;
 }
 
